@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root{
+/*cores*/
+
+--cor-primaria:#FFFFFF;
+--cor-secundaria:#8E2424;
+--cor-terciaria:#667085;
+
+/*fontes*/
+--fonte-principal:"Inter", sans-serif;
+}
+
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+background-color: var(--cor-primaria);
+}
+/*========= CABEÇALHO =========*/
+.cabecalho{
+    margin:2% 0% 0% 2%;
+    display:flex;
+}
+
+.barra_navegacao{
+    display:flex;
+    flex-direction: row;
+    gap:5rem;
+    font-family:var(--fonte-principal);
+    color:var(--cor-terciaria)
+}
+.link_navegacao:hover{
+    text-decoration: underline;
+    cursor:pointer;
+
+}
+
+.barra_login{
+    display: flex;
+    margin:0% 0% 0% 27%;
+    gap:2rem;
+    font-family: var(--fonte-principal);
+}
+.link_acesso{
+margin:3%;
+}
+
+.link_acesso:hover{
+text-decoration: underline;
+cursor:pointer;
+}
+
+
+.botao_registrar{
+align-items: center;
+padding:0.50em;
+background-color: var(--cor-secundaria);
+color: var(--cor-primaria);
+border-radius:4px;
+ transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+
+.botao_registrar:hover{
+background-color:#4e1a1a;
+cursor:pointer;
+transform: translateY(-2px);
+}
+ /*========== PAGINA-1 =========*/
+.pagina_1{
+    display:flex;
+    margin: 4rem;
+    flex-direction: column;
+    align-items: center;
+}
+.texto_simples{
+color:var(--cor-secundaria);
+font-family: "Inter",sans-serif;
+}
+.titulo_pag_1{
+    font-family: "Inter",sans-serif;
+    margin:2rem;
+}
+.paragrafo_pag_1{
+    width: 40rem;
+    font-family: "Inter",sans-serif;
+    justify-content: center;
+    align-items: center;
+}
+
+.lista_beneficios{
+    display:flex;
+    margin:8rem;
+    flex-direction:row;
+    gap:3rem;
+}
+.container_numeros  {
+    display:flex;
+    justify-content: center;
+    color:var(--cor-secundaria);
+    gap:5rem;
+}
+.container_titulos{
+    display:flex;
+    justify-content:center;
+    color:#000000;
+    margin:6px;  
+}
+.container_descricao{
+    display:flex;
+    justify-content:center;
+    color:var(--cor-terciaria);
+    gap:10rem;
+}
+/*==========PAGINA 2=============*/
+.pagina_2{
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+gap:1rem;
+}
+.frase_pag_2{
+background-color:#8E24240D;
+color:#8E2424;
+border-radius:10px;
+padding:0.22rem;
+}
+.titulo_pag_2{
+font-family:"Inter",sans-serif;
+}
+.descricao_pag_2{
+font-family:"Inter",sans-serif;
+color:var(--cor-terciaria);
+}
+.imagem_pag_2{
+width:70rem;
+border-radius: 8px;
+}
+/*============PAGINA 3================*/
+
+.indicacao_vagas{
+    display:flex;
+    flex-direction:column;
+    margin:6rem;
+    gap:2rem;
+    font-family:"Inter",sans-serif;
+
+}
+.vagas{
+    display:flex;
+    gap:2rem;
+    flex-direction:column;
+    border:2px solid gray;
+    border-radius:8px;
+    padding:1rem
+}
+
+.informacoes{
+    display:flex;
+    gap:2rem;
+    color:var(--cor-terciaria);
+}
+
+.titulo_vaga{
+font-weight: 500;
+}
+/*============PAGINA 3===============*/
+.feedback{
+margin:1.5rem;
+padding:3rem;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+background-color:rgba(195, 25, 25, 0.03);
+gap:3rem;
+border-radius:8px;
+} 
+
+.frase_pag_3{
+    color:var(--cor-secundaria);
+}
+
+.avatar{
+display:flex;
+align-items:center;
+flex-direction: column;
+gap:8px;
+}
+
+.descricao_avatar{
+color:var(--cor-terciaria);
+}
+/*====================RODAPE=====================*/
+.rodape{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    background-color:rgba(249, 250, 251, 1);
+    padding:4rem;
+    gap:2rem;
+    flex-direction: column;
+}
+.secao_cadastro{
+gap:8px;
+}
+.secao_input{
+    padding:5px;
+    border-radius:4px;
+}
+
+
+.botao_cadastro{
+    color:var(--cor-primaria);
+    background-color: var(--cor-secundaria);
+    border-radius:6px;
+    padding:6px;
+}
+.botao_cadastro:hover{
+    cursor:pointer;
+    background-color:#591717;
+}
